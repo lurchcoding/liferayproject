@@ -1,0 +1,18 @@
+services:
+  liferayproject:
+    image: mysql:8.0
+    container_name: liferayproject
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword   # Change to a secure password
+      MYSQL_DATABASE: lportal
+      MYSQL_USER: lif_user                # Optional user
+      MYSQL_PASSWORD: lif_password        # Password for lif_user
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./mysql-data:/var/lib/mysql       # Bind mount to project folder
+    restart: unless-stopped
+
+    # in liferay:
+    # username/email: test@liferay.com
+    # password: liferay
