@@ -1,7 +1,7 @@
-### 🚀 Liferay Workspace Setup Guide
+# 🚀 Liferay Workspace Setup Guide
 Follow these steps in the correct order to successfully set up and run your Liferay workspace using Docker and Blade CLI.
 
-# 🧰 Prerequisites
+### 🧰 Prerequisites
 Make sure you have the following installed:
 
 Blade CLI
@@ -10,44 +10,44 @@ Docker
 
 Git
 
-# 🔧 Setup Instructions
+### 🔧 Setup Instructions
 1️⃣ Clone the Repository
 
 git clone <your-repo-url>
 cd <your-project-directory>
 
-# 2️⃣ Initialize Blade Server
+### 2️⃣ Initialize Blade Server
 Run the following inside the project directory:
 
 blade server init
 
-# 3️⃣ Add the Database Driver
+### 3️⃣ Add the Database Driver
 Add the appropriate database driver .jar file to:
 
 ./bundles/osgi/modules
 
 📌 Example: For MySQL, add mysql-connector-java-<version>.jar.
 
-# 4️⃣ Start the Docker Containers
+### 4️⃣ Start the Docker Containers
 Use Docker Compose to spin up the required containers:
 
 docker-compose up -d
 
 This may take a few minutes the first time it runs.
 
-# 5️⃣ Run the Liferay Server
+### 5️⃣ Run the Liferay Server
 Start the Liferay server with Blade CLI:
 
 blade server run
 
 Wait for the server to fully start.
 
-# 🌐 Access Liferay
+### 🌐 Access Liferay
 Once the project is running, open your browser and go to:
 
 http://localhost:8080
 
-# 🔐 First-Time Login
+### 🔐 First-Time Login
 
 Email/Username: test@liferay.com
 
