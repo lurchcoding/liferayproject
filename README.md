@@ -13,32 +13,31 @@ Git
 ### 🔧 Setup Instructions
 1️⃣ Clone the Repository
 
-git clone <your-repo-url>
-cd <your-project-directory>
+"git clone https://github.com/lurchcoding/liferayproject"
 
 ### 2️⃣ Initialize Blade Server
 Run the following inside the project directory:
 
-blade server init
+"blade server init"
 
 ### 3️⃣ Add the Database Driver
 Add the appropriate database driver .jar file to:
 
-./bundles/osgi/modules
+"./bundles/osgi/modules"
 
 📌 Example: For MySQL, add mysql-connector-java-<version>.jar.
 
 ### 4️⃣ Start the Docker Containers
 Use Docker Compose to spin up the required containers:
 
-docker-compose up -d
+"docker-compose up -d"
 
 This may take a few minutes the first time it runs.
 
 ### 5️⃣ Run the Liferay Server
 Start the Liferay server with Blade CLI:
 
-blade server run
+"blade server run"
 
 Wait for the server to fully start.
 
